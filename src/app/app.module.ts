@@ -10,14 +10,17 @@ import {
   MatIconModule,
   MatInputModule,
   MatNativeDateModule,
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatDialogModule
 } from '@angular/material';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataTableComponent
+    DataTableComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -27,9 +30,12 @@ import {
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatDialogModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ConfirmDialogComponent]
 })
 export class AppModule { }
